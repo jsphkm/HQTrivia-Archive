@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body > header, main {
+  padding-top: 14px;
+  padding-left: 10pt;
+  padding-right: 10pt;
+  width: 100%;
+  min-width: 300px;
+}
+
+.maincontainer {
+  margin: 0 auto;
+  padding-top: 12px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 10px;
+}
+
+form {
+  margin: 0;
+}
+
+.questions {
+  padding: 0;
+  width:100%;
+  display: inline-flex;
+}
+
+.question {
+  height: 50px;
+  font-size: 14pt;
+  text-align: center;
+  margin-top: 27pt;
+  margin-bottom: 35pt;
+}
+
+li, button {
+  font-size: 11.5pt;
+  height: 36pt;
+  margin-bottom: 9pt;
+}
+
+.greenNext {
+  background-color: #4bb785;
+  color: white;
+  border: 2px solid #4bb785;
+}
+
+.redNext {
+  background-color: #D42D59;
+  color: white;
+  border: 2px solid #D42D59;
+}
+
+
+body > header {
+  height: 280px;
+}
+
+.hideheader {
+  height: 170px;
+}
+
+.logocolor{
+  margin: 0 auto;
+  margin-top: 60px;
+  width: 84.8pt;
+}
+
+.savagecontainer {
+  font-size: 50px;
+}
+
+input[type="radio"]:checked + label > .borderoutline {
+  border-radius: 35px;
+  border-color: #686DD2;
+  background-color: #686DD2;
+  color: white;
+}
+
+input:focus + label > .borderoutline, button:focus, input:focus {
+  -webkit-box-shadow: 5px 15px 12px -6px #777;
+   -moz-box-shadow: 5px 15px 12px -6px #777;
+        box-shadow: 5px 15px 12px -6px #777;
+}
+
+
+/* Non-mobile, grid */
+@media only screen and (min-width: 500px) {
+  body>header, main {
+    max-width: 466px;
+    margin: 0 auto;
+    padding-top: 14px;
+  }
+
+  .greenNext:hover, .continuebutton:hover, .tryagainbuttoncontainer > button:hover, .greenNext:focus, .continuebutton:focus, .tryagainbuttoncontainer > button:focus {
+    background-color: #4fc68e;
+    border: 2px solid #4fc68e;
+    transition: all 0.3s ease;
+  }
+
+  .redNext:hover, .endbutton:hover, .submitActive:hover, .redNext:focus, .endbutton:focus, .submitActive:focus {
+    background-color: #ef5179;
+    border: 2px solid #ef5179;
+    transition: all 0.3s ease;
+  }
+
+  .savagecontainer {
+    font-size: 70px;
+  }
+
+  .closebutton:hover, .closebutton:focus {
+    color: #36388e;
+    transition: color 0.3s ease;
+  }
+
+}

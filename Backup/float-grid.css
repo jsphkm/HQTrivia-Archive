@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body > header, main {
+  padding-top: 14px;
+  padding-left: 10pt;
+  padding-right: 10pt;
+  width: 100%;
+  min-width: 300px;
+}
+
+.maincontainer {
+  margin: 0 auto;
+  padding-top: 12px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 10px;
+}
+
+form {
+  margin: 0;
+}
+
+.questions {
+  padding: 0;
+}
+
+.questions header {
+  display: inline-flex;
+}
+
+.question {
+  height: 50px;
+  font-size: 16pt;
+  text-align: center;
+  margin-top: 21pt;
+  margin-bottom: 42pt;
+}
+
+li, button {
+  font-size: 12pt;
+  height: 36pt;
+  margin-bottom: 9pt;
+}
+
+.greenNext {
+  background-color: #4bb785;
+  color: white;
+  border: 2px solid #4bb785;
+}
+
+.redNext {
+  background-color: #D42D59;
+  color: white;
+  border: 2px solid #D42D59;
+}
+
+
+body > header {
+  height: 280px;
+}
+
+.hideheader {
+  height: 170px;
+}
+
+.logocolor{
+  margin: 0 auto;
+  margin-top: 60px;
+  width: 84.8pt;
+}
+
+.tryagainbuttoncontainer > button {
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  width: 200px;
+  text-align: center;
+  list-style-type: none;
+  border: 2px solid #4bb785;
+
+  /* Border radius for Chrome, Webkit and other good browsers */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -border-radius: 10px;
+  border-radius: 35px;
+  background-color: #4bb785;
+  color: white;
+}
+
+
+/* Non-mobile, grid */
+@media only screen and (min-width: 500px) {
+  body>header, main {
+    max-width: 466px;
+    margin: 0 auto;
+    padding-top: 14px;
+  }
+
+  .labelhover:hover {
+    background-color: #dfdaed;
+    border: 2px solid #dfdaed;
+    transition: all 0.4s ease;
+  }
+
+  .submitActive:hover {
+    background-color: #E6486D;
+    border: 2px solid #E6486D;
+    transition: all 0.4s ease;
+  }
+
+  .greenNext:hover {
+    background-color: #52C992;
+    border: 2px solid #52C992;
+    transition: all 0.3s ease;
+
+  }
+
+  .redNext:hover {
+    background-color: #E7496D;
+    border: 2px solid #E7496D;
+    transition: all 0.3s ease;
+  }
+
+  .tryagainbuttoncontainer > button:hover {
+    background-color: #52C992;
+    border: 2px solid #52C992;
+    transition: all 0.3s ease;
+  }
+}
