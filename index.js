@@ -322,18 +322,18 @@ function animatePeopleNums(){
 
 function renderFinalPageElements() {
   if (currentStreakResult[0] > higheststreakNum) {
-    $('.headermessage').html('That was your best streak!');
+    $('.headermessage').html('<h1>That was your best streak!</h1>');
   }
   else {
     if (currentStreakResult[0] == 12) {
-      $('.headermessage').html('Great Job!');
+      $('.headermessage').html('<h1>Great Job!</h1>');
     }
     else {
-      $('.headermessage').html('Play Again!');
+      $('.headermessage').html('<h1>Play Again!</h1>');
     }
   }
   $('.maincontainer').append(generateFinalPageElements());
-  $('body').append(generateToastElements());
+  $('header').append(generateToastElements());
   renderToastAnimation();
 }
 
